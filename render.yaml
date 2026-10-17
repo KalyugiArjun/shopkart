@@ -3,15 +3,17 @@ services:
     name: shopkart
     runtime: php
     plan: free
-    buildCommand: composer install --no-dev --optimize-autoloader && touch database/database.sqlite && php artisan migrate --force --seed
-    startCommand: php artisan serve --host 0.0.0.0 --port $PORT
+    buildCommand: bash render-build.sh
+    startCommand: touch database/database.sqlite && php artisan migrate --force && php artisan serve --host 0.0.0.0 --port $PORT
     envVars:
       - key: APP_ENV
         value: production
       - key: APP_DEBUG
-        value: false
+        value: true
       - key: APP_KEY
-        generateValue: true
+        value: base64:w4hFeVm7Mi5e4TSikhPMx6u+Ku/lYq9GP6YwKdjmNdg=
+      - key: APP_URL
+        value: https://shopkart-2e78.onrender.com
       - key: DB_CONNECTION
         value: sqlite
       - key: SESSION_DRIVER
