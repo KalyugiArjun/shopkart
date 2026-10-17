@@ -1,1 +1,2 @@
-*.sqlite*
+# Keep database.sqlite tracked for cloud deployments
+!.gitignore

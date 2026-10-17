@@ -2,10 +2,18 @@
 # Exit on error
 set -o errexit
 
+# If .env does not exist, copy from .env.example
+if [ ! -f .env ]; then
+    cp .env.example .env
+fi
+
 composer install --no-dev --optimize-autoloader
 
 # Ensure sqlite database exists
-touch database/database.sqlite
+mkdir -p database
+if [ ! -f database/database.sqlite ]; then
+    touch database/database.sqlite
+fi
 
 # Ensure storage directories exist and have proper permissions
 mkdir -p storage/framework/{sessions,views,cache}
