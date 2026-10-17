@@ -1,9 +1,10 @@
 services:
   - type: web
-    name: shopkart-multivendor
-    env: docker
+    name: shopkart
+    runtime: php
     plan: free
-    dockerfilePath: Dockerfile
+    buildCommand: composer install --no-dev --optimize-autoloader && touch database/database.sqlite && php artisan migrate --force --seed
+    startCommand: php artisan serve --host 0.0.0.0 --port $PORT
     envVars:
       - key: APP_ENV
         value: production
@@ -13,5 +14,7 @@ services:
         generateValue: true
       - key: DB_CONNECTION
         value: sqlite
-      - key: LOG_CHANNEL
-        value: stderr
+      - key: SESSION_DRIVER
+        value: cookie
+      - key: CACHE_STORE
+        value: file
