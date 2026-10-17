@@ -46,7 +46,7 @@
                     <div class="d-flex justify-content-between align-items-center pt-2 border-top">
                         <small class="text-muted">{{ $seller->products()->count() }} Products</small>
                         <a href="{{ route('seller.storefront', $seller->slug) }}" class="btn btn-sm btn-sk-primary">
-                            Explore Store &rarr;
+                            Explore Store
                         </a>
                     </div>
                 </div>

@@ -153,7 +153,7 @@
                     </div>
 
                     <a href="{{ route('checkout.index') }}" class="btn btn-sk-primary w-100 py-2 fw-bold text-center">
-                        Proceed to Checkout &rarr;
+                        Proceed to Checkout
                     </a>
 
                     <div class="mt-3 text-center text-muted small">

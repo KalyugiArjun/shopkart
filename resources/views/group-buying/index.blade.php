@@ -64,7 +64,7 @@
                         <div class="d-flex justify-content-between align-items-center pt-3 border-top">
                             <span class="small text-secondary">Code: <code>{{ $group->group_code }}</code></span>
                             <a href="{{ route('group-buying.show', $group->group_code) }}" class="btn btn-sm btn-danger fw-bold">
-                                Join Deal &rarr;
+                                Join Deal
                             </a>
                         </div>
                     </div>

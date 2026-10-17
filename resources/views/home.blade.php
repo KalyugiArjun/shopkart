@@ -58,7 +58,7 @@
                 <h2 class="sk-section-title"><i class="bi bi-grid text-warning"></i> Explore Popular Categories</h2>
                 <small class="text-muted">Handpicked collections across Indian top sellers</small>
             </div>
-            <a href="{{ route('products.index') }}" class="btn btn-sm btn-link text-decoration-none text-warning fw-bold">View All Categories &rarr;</a>
+            <a href="{{ route('products.index') }}" class="btn btn-sm btn-link text-decoration-none text-warning fw-bold">View All Categories</a>
         </div>
         @php
             $catImages = [
@@ -67,9 +67,16 @@
                 'electronics' => 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&h=400&fit=crop',
                 'mobiles' => 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop',
                 'watches' => 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=400&h=400&fit=crop',
-                'home-kitchen' => 'https://images.unsplash.com/photo-1584990347449-39c4d36ef58e?w=400&h=400&fit=crop',
+                'home-kitchen' => 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=400&h=400&fit=crop',
                 'handicrafts' => 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=400&fit=crop',
-                'sports-fitness' => 'https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=400&h=400&fit=crop',
+                'sports-fitness' => 'https://images.unsplash.com/photo-1614632537423-1e6c2e7e0aab?w=400&h=400&fit=crop',
+                'grocery' => 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=400&fit=crop',
+                'beauty' => 'https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?w=400&h=400&fit=crop',
+                'luggage' => 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop',
+                'jewelry' => 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop',
+                'books' => 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=400&fit=crop',
+                'toys' => 'https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=400&h=400&fit=crop',
+                'automotive' => 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&h=400&fit=crop',
             ];
         @endphp
         <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 g-3">
@@ -77,7 +84,7 @@
                 <div class="col">
                     <a href="{{ route('products.index', ['category' => $cat->slug]) }}" class="card h-100 text-decoration-none border-0 shadow-sm rounded-4 overflow-hidden position-relative group hover-lift transition">
                         <div class="position-relative" style="height: 140px; overflow: hidden; background: #e2e8f0;">
-                            <img src="{{ $catImages[$cat->slug] ?? 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop' }}" alt="{{ $cat->name }}" class="w-100 h-100 object-fit-cover transition transform-scale">
+                            <img src="{{ $catImages[$cat->slug] ?? 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop' }}" alt="{{ $cat->name }}" class="w-100 h-100 object-fit-cover transition transform-scale" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop';">
                             <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(15,23,42,0.85) 100%);"></div>
                             <div class="position-absolute bottom-0 start-0 p-3 text-white">
                                 <span class="badge bg-warning text-dark mb-1" style="font-size: 0.65rem;">
@@ -129,7 +136,7 @@
                                 @endif
                             </div>
                             <a href="{{ route('seller.storefront', $seller->slug) }}" class="btn btn-sm btn-sk-outline">
-                                Visit Store &rarr;
+                                Visit Store
                             </a>
                         </div>
                     </div>
@@ -161,7 +168,7 @@
                             </div>
                             <div class="row align-items-center gy-3 mb-3">
                                 <div class="col-4">
-                                    <img src="{{ $group->product->thumbnail }}" class="img-fluid rounded" alt="{{ $group->product->name }}" style="max-height: 120px; object-fit: cover;">
+                                    <img src="{{ $group->product->thumbnail }}" class="img-fluid rounded" alt="{{ $group->product->name }}" style="max-height: 120px; object-fit: cover;" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=600&fit=crop';">
                                 </div>
                                 <div class="col-8">
                                     <h6 class="fw-bold mb-1">{{ Str::limit($group->product->name, 50) }}</h6>
@@ -186,7 +193,7 @@
                         <div class="d-flex justify-content-between align-items-center mt-3 pt-3 border-top">
                             <span class="small text-secondary">Code: <code>{{ $group->group_code }}</code></span>
                             <a href="{{ route('group-buying.show', $group->group_code) }}" class="btn btn-sm btn-danger fw-bold px-3">
-                                Join This Deal &rarr;
+                                Join This Deal
                             </a>
                         </div>
                     </div>
@@ -205,7 +212,7 @@
                 </h2>
                 <small class="text-muted">Delivered in 20-45 minutes from local stores</small>
             </div>
-            <a href="{{ route('fast-delivery.index') }}" class="btn btn-sm btn-link text-warning fw-bold text-decoration-none">View All Fast Deliveries &rarr;</a>
+            <a href="{{ route('fast-delivery.index') }}" class="btn btn-sm btn-link text-warning fw-bold text-decoration-none">View All Fast Deliveries</a>
         </div>
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
             @foreach($fastDeliveryProducts->take(4) as $product)
@@ -225,7 +232,7 @@
                 </h2>
                 <small class="text-muted">Top discounts on verified electronics, ethnic wear & living</small>
             </div>
-            <a href="{{ route('products.index') }}" class="btn btn-sm btn-link text-warning fw-bold text-decoration-none">Explore Catalog &rarr;</a>
+            <a href="{{ route('products.index') }}" class="btn btn-sm btn-link text-warning fw-bold text-decoration-none">Explore Catalog</a>
         </div>
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
             @foreach($todaysDeals->take(4) as $product)

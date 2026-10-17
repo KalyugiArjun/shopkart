@@ -295,106 +295,175 @@
     <!-- Modern Indian Marketplace Footer -->
     <footer class="sk-footer mt-5">
         <div class="container">
-            <!-- Trust Pillars Bar -->
-            <div class="row pb-4 mb-4 border-bottom border-secondary text-center text-md-start gy-3">
-                <div class="col-6 col-md-3">
-                    <div class="d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
-                        <i class="bi bi-shield-check text-warning fs-1"></i>
+            <!-- Trust Pillars Bar (Modern Cards) -->
+            <div class="row g-3 pb-4 mb-5 border-bottom border-secondary border-opacity-25">
+                <div class="col-6 col-lg-3">
+                    <div class="sk-footer-trust-card d-flex align-items-center gap-3">
+                        <div class="sk-footer-trust-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
                         <div>
-                            <div class="text-white fw-bold">100% Genuine</div>
-                            <small class="text-muted">Verified Indian Sellers</small>
+                            <div class="text-white fw-bold small">100% Verified Sellers</div>
+                            <small class="text-muted" style="font-size: 0.75rem;">Strict GST & trust audits</small>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3">
-                    <div class="d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
-                        <i class="bi bi-lightning-charge-fill text-warning fs-1"></i>
+                <div class="col-6 col-lg-3">
+                    <div class="sk-footer-trust-card d-flex align-items-center gap-3">
+                        <div class="sk-footer-trust-icon">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                        </div>
                         <div>
-                            <div class="text-white fw-bold">Local Fast Delivery</div>
-                            <small class="text-muted">Under 30-45 Minutes</small>
+                            <div class="text-white fw-bold small">Local Fast Delivery</div>
+                            <small class="text-muted" style="font-size: 0.75rem;">Under 30-45 mins to door</small>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3">
-                    <div class="d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
-                        <i class="bi bi-credit-card-2-front text-warning fs-1"></i>
+                <div class="col-6 col-lg-3">
+                    <div class="sk-footer-trust-card d-flex align-items-center gap-3">
+                        <div class="sk-footer-trust-icon">
+                            <i class="bi bi-credit-card-2-front"></i>
+                        </div>
                         <div>
-                            <div class="text-white fw-bold">Secure Indian Payments</div>
-                            <small class="text-muted">UPI, Cards, Razorpay & COD</small>
+                            <div class="text-white fw-bold small">Secure Indian Payments</div>
+                            <small class="text-muted" style="font-size: 0.75rem;">UPI, Cards, RuPay & COD</small>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-3">
-                    <div class="d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
-                        <i class="bi bi-arrow-repeat text-warning fs-1"></i>
+                <div class="col-6 col-lg-3">
+                    <div class="sk-footer-trust-card d-flex align-items-center gap-3">
+                        <div class="sk-footer-trust-icon">
+                            <i class="bi bi-box-seam-fill"></i>
+                        </div>
                         <div>
-                            <div class="text-white fw-bold">7-Day Easy Returns</div>
-                            <small class="text-muted">Doorstep Pickup</small>
+                            <div class="text-white fw-bold small">7-Day Easy Returns</div>
+                            <small class="text-muted" style="font-size: 0.75rem;">Doorstep pickup & refund</small>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Links Columns -->
-            <div class="row gy-4">
-                <div class="col-12 col-md-4">
+            <!-- Main Footer Columns -->
+            <div class="row gy-4 mb-4">
+                <!-- Col 1: Brand & Contact -->
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="sk-brand text-white mb-3">
                         <span>Shop</span><span class="sk-brand-badge">Kart</span>
                     </div>
-                    <p class="text-muted pe-md-4">
-                        ShopKart is India's premier multi-vendor marketplace connecting local neighborhood stores and verified online merchants with fast local delivery, transparent price comparisons, and group-buying deals.
+                    <p class="text-muted small pe-lg-4 mb-3" style="line-height: 1.6;">
+                        ShopKart connects verified Indian neighborhood stores and national sellers with hyper-local doorstep delivery, transparent side-by-side price matching, and community group-buying savings.
                     </p>
-                    <div class="d-flex gap-3 fs-5 text-white">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <div class="small text-muted mb-3 d-flex flex-column gap-1">
+                        <span><i class="bi bi-envelope text-warning me-2"></i> support@shopkart.in</span>
+                        <span><i class="bi bi-telephone text-warning me-2"></i> 1800-SHOPKART (Mon - Sat, 9am - 8pm)</span>
+                        <span><i class="bi bi-geo-alt text-warning me-2"></i> Hazratganj, Lucknow & Nehru Place, New Delhi</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="sk-social-icon" title="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="sk-social-icon" title="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="sk-social-icon" title="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="sk-social-icon" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="sk-social-icon" title="YouTube"><i class="bi bi-youtube"></i></a>
                     </div>
                 </div>
-                <div class="col-6 col-md-2">
-                    <div class="sk-footer-title">Shop Local</div>
-                    <ul class="list-unstyled d-flex flex-column gap-2">
-                        <li><a href="{{ route('nearby.index') }}">Nearby Sellers</a></li>
-                        <li><a href="{{ route('fast-delivery.index') }}">Fast Delivery Store</a></li>
+
+                <!-- Col 2: Shop by Category -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="sk-footer-title">Top Categories</div>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="{{ route('products.index', ['category' => 'fashion']) }}">Indian Ethnic & Fashion</a></li>
+                        <li><a href="{{ route('products.index', ['category' => 'electronics']) }}">Audio & Electronics</a></li>
+                        <li><a href="{{ route('products.index', ['category' => 'mobiles']) }}">Smartphones & Tablets</a></li>
+                        <li><a href="{{ route('products.index', ['category' => 'footwear']) }}">Footwear & Sneakers</a></li>
+                        <li><a href="{{ route('products.index', ['category' => 'home-kitchen']) }}">Kitchenware & Living</a></li>
+                        <li><a href="{{ route('products.index', ['category' => 'handicrafts']) }}">Authentic Handicrafts</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Customer Care -->
+                <div class="col-6 col-md-3 col-lg-2">
+                    <div class="sk-footer-title">Customer Care</div>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="{{ route('nearby.index') }}">Nearby Stores</a></li>
+                        <li><a href="{{ route('fast-delivery.index') }}">Fast Delivery Mode</a></li>
                         <li><a href="{{ route('group-buying.index') }}">Group Buy Deals</a></li>
                         <li><a href="{{ route('ai.index') }}">Ask ShopKart AI</a></li>
-                        <li><a href="{{ route('visual.index') }}">Visual Image Search</a></li>
+                        <li><a href="{{ route('visual.index') }}">Visual Photo Search</a></li>
+                        <li><a href="{{ route('orders.index') }}">Track Order Status</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-2">
-                    <div class="sk-footer-title">Seller Hub</div>
-                    <ul class="list-unstyled d-flex flex-column gap-2">
+
+                <!-- Col 4: Seller Hub -->
+                <div class="col-6 col-md-6 col-lg-2">
+                    <div class="sk-footer-title">Merchant Hub</div>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
                         <li><a href="{{ route('seller.register') }}">Sell on ShopKart</a></li>
-                        <li><a href="{{ route('seller.dashboard') }}">Seller Portal</a></li>
-                        <li><a href="#">Commission Policy</a></li>
-                        <li><a href="#">Fulfillment Guidelines</a></li>
-                        <li><a href="#">Merchant Support</a></li>
+                        <li><a href="{{ route('seller.dashboard') }}">Seller Portal Login</a></li>
+                        <li><a href="{{ route('seller.orders.index') }}">Order Dispatch Hub</a></li>
+                        <li><a href="{{ route('seller.products.index') }}">Manage Catalog</a></li>
+                        <li><a href="{{ route('seller.payouts.index') }}">NEFT / UPI Payouts</a></li>
+                        <li><a href="{{ route('seller.settings') }}">GSTIN & Store Setup</a></li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-4">
-                    <div class="sk-footer-title">Major Indian Hubs</div>
-                    <p class="text-muted small mb-2">Live fast local deliveries across:</p>
-                    <div class="d-flex flex-wrap gap-2">
-                        <span class="badge bg-secondary">Lucknow</span>
-                        <span class="badge bg-secondary">New Delhi</span>
-                        <span class="badge bg-secondary">Mumbai</span>
-                        <span class="badge bg-secondary">Bengaluru</span>
-                        <span class="badge bg-secondary">Jaipur</span>
-                        <span class="badge bg-secondary">Hyderabad</span>
-                        <span class="badge bg-secondary">Chennai</span>
-                        <span class="badge bg-secondary">Kolkata</span>
-                        <span class="badge bg-secondary">Pune</span>
-                        <span class="badge bg-secondary">Ahmedabad</span>
+
+                <!-- Col 5: Security & App -->
+                <div class="col-6 col-md-6 col-lg-2">
+                    <div class="sk-footer-title">Experience App</div>
+                    <p class="text-muted small mb-2">Shop faster with mobile app:</p>
+                    <div class="d-flex flex-column gap-2 mb-3">
+                        <a href="#" class="p-2 rounded border border-secondary border-opacity-25 bg-white bg-opacity-5 d-flex align-items-center gap-2 text-decoration-none">
+                            <i class="bi bi-google-play fs-4 text-warning"></i>
+                            <div class="text-start">
+                                <div style="font-size: 0.65rem;" class="text-muted">GET IT ON</div>
+                                <div class="text-white fw-bold small">Google Play</div>
+                            </div>
+                        </a>
+                        <a href="#" class="p-2 rounded border border-secondary border-opacity-25 bg-white bg-opacity-5 d-flex align-items-center gap-2 text-decoration-none">
+                            <i class="bi bi-apple fs-4 text-light"></i>
+                            <div class="text-start">
+                                <div style="font-size: 0.65rem;" class="text-muted">Download on the</div>
+                                <div class="text-white fw-bold small">App Store</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <div class="row pt-4 mt-4 border-top border-secondary text-muted small">
-                <div class="col-md-6 text-center text-md-start">
-                    &copy; {{ date('Y') }} ShopKart India Multi-Vendor Marketplace. All rights reserved.
+            <!-- Indian Cities Coverage Strip -->
+            <div class="pt-4 pb-4 border-top border-secondary border-opacity-25">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                    <span class="small fw-bold text-white"><i class="bi bi-geo-alt-fill text-warning me-1"></i> Active Hyper-Local Delivery Hubs:</span>
+                    <small class="text-muted">Doorstep service within 30-45 minutes</small>
                 </div>
-                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
-                    <span>Designed for Indian E-Commerce • Made with <i class="bi bi-heart-fill text-danger"></i> in India</span>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="{{ route('products.index', ['city' => 'Lucknow']) }}" class="sk-city-chip"><i class="bi bi-pin-map text-warning"></i> Lucknow (226001)</a>
+                    <a href="{{ route('products.index', ['city' => 'New Delhi']) }}" class="sk-city-chip"><i class="bi bi-pin-map text-warning"></i> New Delhi (110001)</a>
+                    <a href="{{ route('products.index', ['city' => 'Mumbai']) }}" class="sk-city-chip"><i class="bi bi-pin-map text-warning"></i> Mumbai (400001)</a>
+                    <a href="{{ route('products.index', ['city' => 'Bengaluru']) }}" class="sk-city-chip"><i class="bi bi-pin-map text-warning"></i> Bengaluru (560001)</a>
+                    <a href="{{ route('products.index', ['city' => 'Jaipur']) }}" class="sk-city-chip"><i class="bi bi-pin-map text-warning"></i> Jaipur (302001)</a>
+                    <a href="{{ route('products.index', ['city' => 'Hyderabad']) }}" class="sk-city-chip"><i class="bi bi-pin-map text-warning"></i> Hyderabad (500001)</a>
+                    <a href="{{ route('products.index', ['city' => 'Chennai']) }}" class="sk-city-chip"><i class="bi bi-pin-map text-warning"></i> Chennai (600001)</a>
+                    <a href="{{ route('products.index', ['city' => 'Kolkata']) }}" class="sk-city-chip"><i class="bi bi-pin-map text-warning"></i> Kolkata (700001)</a>
+                    <a href="{{ route('products.index', ['city' => 'Pune']) }}" class="sk-city-chip"><i class="bi bi-pin-map text-warning"></i> Pune (411001)</a>
+                    <a href="{{ route('products.index', ['city' => 'Ahmedabad']) }}" class="sk-city-chip"><i class="bi bi-pin-map text-warning"></i> Ahmedabad (380001)</a>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright & Accepted Payments Bar -->
+            <div class="row pt-4 border-top border-secondary border-opacity-25 align-items-center gy-3 text-muted small">
+                <div class="col-md-6 text-center text-md-start">
+                    <div>&copy; {{ date('Y') }} ShopKart India Multi-Vendor Marketplace Pvt. Ltd. All rights reserved.</div>
+                    <div class="mt-1" style="font-size: 0.75rem;">100% Indian Statutory & GST Compliant &bull; CIN: U72900UP2026PTC184920</div>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-inline-flex flex-wrap gap-2 align-items-center justify-content-center justify-content-md-end">
+                        <span class="sk-payment-badge text-primary"><i class="bi bi-upc-scan me-1"></i> UPI</span>
+                        <span class="sk-payment-badge text-success"><i class="bi bi-phone me-1"></i> BHIM</span>
+                        <span class="sk-payment-badge text-danger"><i class="bi bi-credit-card me-1"></i> RuPay</span>
+                        <span class="sk-payment-badge text-dark"><i class="bi bi-credit-card-2-front me-1"></i> Visa</span>
+                        <span class="sk-payment-badge text-warning"><i class="bi bi-credit-card-2-back me-1"></i> Mastercard</span>
+                        <span class="sk-payment-badge text-secondary"><i class="bi bi-cash me-1"></i> COD</span>
+                    </div>
                 </div>
             </div>
         </div>

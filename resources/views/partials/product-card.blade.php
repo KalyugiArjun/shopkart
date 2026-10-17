@@ -1,7 +1,7 @@
 <div class="sk-product-card">
     <div class="sk-product-thumb">
         <a href="{{ route('products.show', $product->slug) }}">
-            <img src="{{ $product->thumbnail ?: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=600&fit=crop' }}" alt="{{ $product->name }}" loading="lazy">
+            <img src="{{ $product->thumbnail ?: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=600&fit=crop' }}" alt="{{ $product->name }}" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=600&fit=crop';">
         </a>
 
         @if($product->is_fast_delivery)

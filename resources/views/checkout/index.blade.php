@@ -218,7 +218,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-sk-primary w-100 py-3 fw-bold fs-6">
-                        Place Order &rarr;
+                        Place Order
                     </button>
 
                     <div class="mt-3 text-center text-muted small">

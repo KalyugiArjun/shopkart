@@ -19,7 +19,7 @@
         <div class="col-lg-5">
             <div class="card border-0 shadow-sm p-3 sticky-top" style="top: 90px;">
                 <div class="text-center mb-3 position-relative">
-                    <img id="mainProductImage" src="{{ $product->thumbnail ?: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=600&fit=crop' }}" class="img-fluid rounded shadow-sm" alt="{{ $product->name }}" style="max-height: 400px; width: 100%; object-fit: contain;">
+                    <img id="mainProductImage" src="{{ $product->thumbnail ?: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=600&fit=crop' }}" class="img-fluid rounded shadow-sm" alt="{{ $product->name }}" style="max-height: 400px; width: 100%; object-fit: contain;" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&h=600&fit=crop';">
                     @if($product->discount_percentage > 0)
                         <span class="sk-badge-discount position-absolute top-0 end-0 m-2">{{ $product->discount_percentage }}% OFF</span>
                     @endif
@@ -146,7 +146,7 @@
                             @csrf
                             <input type="hidden" name="target_buyers" value="2">
                             <button type="submit" class="btn btn-danger btn-sm fw-bold text-nowrap">
-                                Start Group Buy &rarr;
+                                Start Group Buy
                             </button>
                         </form>
                     </div>
@@ -155,7 +155,7 @@
                 <!-- Key Highlights & Return Policy -->
                 <div class="row row-cols-2 g-3 pt-3 border-top text-muted small">
                     <div class="col"><i class="bi bi-shield-check text-success me-1"></i> {{ $product->warranty ?: '1 Year Brand Warranty' }}</div>
-                    <div class="col"><i class="bi bi-arrow-repeat text-primary me-1"></i> {{ $product->return_policy }}</div>
+                    <div class="col"><i class="bi bi-check2-circle text-primary me-1"></i> {{ $product->return_policy }}</div>
                     <div class="col"><i class="bi bi-truck text-warning me-1"></i> Free Shipping on orders over ₹499</div>
                     <div class="col"><i class="bi bi-cash-coin text-success me-1"></i> Cash on Delivery & UPI available</div>
                 </div>
@@ -167,7 +167,7 @@
     <div class="card border-0 shadow-sm p-4 mb-5">
         <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 pb-2 border-bottom">
             <div>
-                <h3 class="fw-bold mb-1"><i class="bi bi-arrow-left-right text-primary me-2"></i> Smart Seller Comparison</h3>
+                <h3 class="fw-bold mb-1"><i class="bi bi-shop text-primary me-2"></i> Smart Seller Comparison</h3>
                 <p class="text-muted small mb-0">Transparent multi-vendor comparison. Compare prices, delivery speeds, ratings and trust scores from different verified sellers.</p>
             </div>
             <span class="badge bg-light text-dark border p-2"><i class="bi bi-info-circle text-primary me-1"></i> Direct Store Comparison</span>
